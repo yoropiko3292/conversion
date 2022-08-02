@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+<meta charset='utf-8'>
+<style class=text/css>
+body{margin:auto;text-align:center;background:#eac1aa;}
+.cnt{background-color:#ffffff;width:30em;margin:auto;}
+label{background-color:#eeeeee;font-size:15px;color:#00aa00;width:5em;padding:0.5em;}
+ol{width:12em;margin:auto;}
+</style>
+<body>
+<h1>10進数⇔n進数変換アプリ</h1>
+ <p>javascriptを使って10進数の整数をn進数に、n進数の整数を10進数にするよ。36進数まで対応しているよ。</p>
+ <noscript>ブラウザの設定でjavascriptがoffになってるからまずonにしてね。</noscript>
+ <div class="cnt">
+  <h2>目次</h2>
+   <ol>
+    <li><a href="#exam">進数とは</a></li>
+    <li><a href="#tenN">10進数をn進数に</a></li>
+    <li><a href="#nTen">n進数を10進数に</a></li>
+   </ol>
+  <br>
+  <h2 id="exam">進数とは</h2>
+   <p>N 進法（エヌしんほう）とは、数の表現方法の一種で、<br>あらかじめ定められたN 種類の記号（数字）<br>を列べることによって数を表す方法である。<br>
+    <a href="https://ja.wikipedia.org/wiki/%E4%BD%8D%E5%8F%96%E3%82%8A%E8%A8%98%E6%95%B0%E6%B3%95" target="_blank">wikipedia</a></p>
+  <br>
+  <h2 id="tenN">10進数をn進数に</h1>
+   <p>10進数の</p><input type="text" id="beforeNumber" value="1024">
+   <p>を</p><input type="text" id="n" value="2">
+   <p>進数にする</p>
+   <label id="letUsGo">実行</label>
+   <p id="result">結果【】</p>
+  <br>
+  <h2 id="nTen">n進数を10進数に</h2>
+   <input type="text" id="number" value="2">
+   <p>進数の</p>
+   <input type="text" id="beforeNbr" value="10000000000">
+   <p>を10進数にする</p>
+   <label id="letUG">実行</label>
+   <p id="res">結果【】</p>
+ </div>
+<script src="convert.js">
+
+</script>
+<!---論理エラー起り過ぎてデバッグ大変だった--->
+<!---P.S.変数の無駄遣いし過ぎた--->
+</body>
+</html>
